@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Tetris</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="game">
+        <div class="canvas-container">
+            <span class="score-container">SCORE: <span id="score">0</span></span>
+            <div class="canvas">
+                <canvas id="canvas-tetris"></canvas>
+            </div>
+        </div>
+    
+        <div class="canvas-container">
+            <span>NEXT</span>
+            <div class="canvas">
+                <canvas id="canvas-next"></canvas>
+            </div>
+        </div>
+
+        <div class="menu" id="menu">
+            <span>TETRIS</span>
+            <button id="btn-start">START</button>
+            <button id="btn-instrucciones">COMO JUGAR</button>
+        </div>
+
+        <div class="gameOver" id="gameOverDiv">
+            <span><strong>GAME OVER</strong></span>
+            <button id="gameOverButton">Jugar Otra Vez</button>
+        </div>
+
+        <div class="guia" id="guia">
+            <div class="guia-titulo">
+                <span><strong>GUIA</strong></span>
+                <button class="salir" id="salir">X</button>
+            </div>
+            
+            <span>Mientras que juegas tendras preguntas
+                que podran benificarte o arruinarte
+            </span>
+
+            <span><strong>Podras Moverte Con las flechas hacia los lados</strong></span>
+
+            <span><strong>Podras Bajar mas rapido con las flecha hacia abajo</strong></span>
+
+            <span><strong>Podras Rotar la ficha con la flecha hacia Arriba</strong></span>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+    <script src="main.js" type="module"></script>
+</html>
